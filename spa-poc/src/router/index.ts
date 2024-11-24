@@ -11,7 +11,7 @@ const router = createRouter({
     {
       path: '/app-component-a',
       name: 'app-component-a',
-      component: () => import("remote_app/TestComponent")
+      component: () => import("module_simple/TestComponent")
     },
     {
       path: '/app-component-b',

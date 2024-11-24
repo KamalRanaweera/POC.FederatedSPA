@@ -13,8 +13,7 @@ export default defineConfig({
     federation({
       name: 'spa-poc',
       remotes: {
-          //app_component_a: "http://localhost:8081/assets/remoteEntry.js",
-          "remote_app": "http://localhost:8081/assets/remoteEntry.js",
+          "module_simple": "http://localhost:8081/assets/appComponentSimple.js",
       },
       shared: ['vue']
   })
