@@ -15,7 +15,7 @@ export default defineConfig({
       filename: 'remoteEntry.js',
       // Modules to expose
       exposes: {
-          './App': './src/App.vue',
+          './App': './src/components/CounterComponent.vue',
       },
       shared: ['vue', 'pinia']
   }),

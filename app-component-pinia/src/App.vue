@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
-import AppComponentA from './components/AppComponentA.vue'
+import CounterComponent from './components/CounterComponent.vue'
 </script>
 
 <template>
@@ -13,7 +13,7 @@ import AppComponentA from './components/AppComponentA.vue'
   </header>
 
   <main>
-    <app-component-a />
+    <counter-component />
   </main>
 </template>
 
