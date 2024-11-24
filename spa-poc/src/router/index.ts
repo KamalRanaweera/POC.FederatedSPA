@@ -11,12 +11,12 @@ const router = createRouter({
     {
       path: '/app-component-a',
       name: 'app-component-a',
-      component: () => import("module_simple/App")
+      component: () => import("module_simple/App"),
     },
     {
       path: '/app-component-b',
       name: 'app-component-b',
-      component: () => import('../views/AboutView.vue'),
+      component: () => import("module_pinia/App"),
     },
     {
       path: '/app-component-c',

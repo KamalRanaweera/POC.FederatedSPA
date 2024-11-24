@@ -11,13 +11,14 @@ export default defineConfig({
     vue(),
     vueDevTools(),
     federation({
-      name: 'spa-poc',
-      remotes: {
-          "module_simple": "http://localhost:8081/assets/remoteEntry.js",
-          "module_pinia": "http://localhost:8082/assets/remoteEntry.js",
+      name: 'remote-app',
+      filename: 'remoteEntry.js',
+      // Modules to expose
+      exposes: {
+          './App': './src/App.vue',
       },
       shared: ['vue', 'pinia']
-  })
+  }),
   ],
   esbuild: {
     supported: {
@@ -29,4 +30,10 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+  server:{
+    port: 8081
+  },
+  preview:{
+    port: 8081 
+  }
 })
