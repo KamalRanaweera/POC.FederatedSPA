@@ -11,7 +11,7 @@ const router = createRouter({
     {
       path: '/app-component-a',
       name: 'app-component-a',
-      component: () => import("module_simple/TestComponent")
+      component: () => import("module_simple/App")
     },
     {
       path: '/app-component-b',

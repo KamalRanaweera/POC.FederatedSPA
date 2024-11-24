@@ -12,10 +12,10 @@ export default defineConfig({
     vueDevTools(),
     federation({
       name: 'remote-app',
-      filename: 'appComponentSimple.js',
+      filename: 'remoteEntry.js',
       // Modules to expose
       exposes: {
-          './TestComponent': './src/components/TestComponent.vue',
+          './App': './src/components/TestComponent.vue',
       },
       shared: ['vue']
   })
