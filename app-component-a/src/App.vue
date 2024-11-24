@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
-import AppComponentA from './components/AppComponentA.vue'
+import TestComponent from './components/TestComponent.vue';
+import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
@@ -13,7 +14,8 @@ import AppComponentA from './components/AppComponentA.vue'
   </header>
 
   <main>
-    <app-component-a />
+    <TheWelcome />
+    <TestComponent />
   </main>
 </template>
 

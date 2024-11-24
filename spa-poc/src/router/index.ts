@@ -1,7 +1,4 @@
-import { defineAsyncComponent } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router'
-
-const AppComponentA = defineAsyncComponent(() => import("app_component_a/AppComponentA"));
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,23 +11,23 @@ const router = createRouter({
     {
       path: '/app-component-a',
       name: 'app-component-a',
-      component: AppComponentA
+      component: () => import("remote_app/TestComponent")
     },
-    // {
-    //   path: '/app-component-b',
-    //   name: 'app-component-b',
-    //   component: AppComponentB,
-    // },
-    // {
-    //   path: '/app-component-c',
-    //   name: 'app-component-c',
-    //   component: AppComponentC,
-    // },
-    // {
-    //   path: '/app-component-d',
-    //   name: 'app-component-d',
-    //   component: () => import('@spa/app-component-d'),
-    // },
+    {
+      path: '/app-component-b',
+      name: 'app-component-b',
+      component: () => import('../views/AboutView.vue'),
+    },
+    {
+      path: '/app-component-c',
+      name: 'app-component-c',
+      component: () => import('../views/AboutView.vue'),
+    },
+    {
+      path: '/app-component-d',
+      name: 'app-component-d',
+      component: () => import('../views/AboutView.vue'),
+    },
     {
       path: '/about',
       name: 'about',
