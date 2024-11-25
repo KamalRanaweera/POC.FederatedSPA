@@ -15,10 +15,11 @@ export default defineConfig({
       filename: 'remoteEntry.js',
       // Modules to expose
       exposes: {
-          './App': './src/components/CounterComponent.vue',
+          './App': './src/components/RoutingComponentMain.vue',
+          './SubRouteOne': './src/components/SubRouteOne.vue',
       },
-      shared: ['vue', 'pinia']
-  }),
+      shared: ['vue']
+    }),
   ],
   esbuild: {
     supported: {
