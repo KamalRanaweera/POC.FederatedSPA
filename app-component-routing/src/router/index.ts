@@ -9,6 +9,11 @@ const router = createRouter({
       component: () => import('../components/RoutingComponentMain.vue')
     },
     {
+      path: '/about',
+      name: 'about',
+      component: () => import('../views/AboutView.vue')
+    },
+    {
       path: '/app-component-c/sub-route-one',
       name: 'sub-route-one',
       component: () => import("../components/SubRouteOne.vue"),

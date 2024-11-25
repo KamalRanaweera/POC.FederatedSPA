@@ -15,7 +15,7 @@ function decrement(): void {
 
 <template>
     <div>
-        This is an application component that is developed as a Vue plug-in in the @spa/app-component-a package. It uses Pinia to implement a state-full functionality.
+        This is a Pinia based component defined in <em>app-component-pinia</em>.
     </div>
     <div class="info">Count: {{  store.count }}</div>
     <button @click="decrement()">Decrement</button>

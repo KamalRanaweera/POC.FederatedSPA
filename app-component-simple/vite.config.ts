@@ -15,7 +15,7 @@ export default defineConfig({
       filename: 'remoteEntry.js',
       // Modules to expose
       exposes: {
-          './App': './src/components/TestComponent.vue',
+          './App': './src/App.vue',
       },
       shared: ['vue']
   }),
