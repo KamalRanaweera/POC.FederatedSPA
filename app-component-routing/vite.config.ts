@@ -18,7 +18,7 @@ export default defineConfig({
           './App': './src/components/RoutingComponentMain.vue',
           './SubRouteOne': './src/components/SubRouteOne.vue',
       },
-      shared: ['vue']
+      shared: ['vue', 'vue-router']
     }),
   ],
   esbuild: {
