@@ -4,6 +4,7 @@ import CounterComponent from './components/CounterComponent.vue'
 
 <template>
   <main>
+    <h2>Pinia Example</h2>
     <counter-component />
   </main>
 </template>

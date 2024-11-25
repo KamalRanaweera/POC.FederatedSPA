@@ -2,10 +2,9 @@
     <div class="content">
       <nav>
           <RouterLink to="/">Home</RouterLink>
-          <RouterLink to="/app-component-a">App Component A</RouterLink>
-          <RouterLink to="/app-component-b">App Component B</RouterLink>
-          <RouterLink to="/app-component-c">App Component C</RouterLink>
-          <RouterLink to="/app-component-d">App Component D</RouterLink>
+          <RouterLink to="/app-component-a">Simple Component</RouterLink>
+          <RouterLink to="/app-component-b">Pinia Example</RouterLink>
+          <RouterLink to="/app-component-c">Wouting Example</RouterLink>
           <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>

@@ -5,7 +5,7 @@ import { RouterLink } from 'vue-router';
 </script>
 
 <template>
-    <h2>App Component B</h2>
+    <h2>Routing Example</h2>
     <div>
         This is an application component developed with Vue routing and integrated to the SPA using module federation.
         It uses Vue Router to navigate to the About page, and another inner-route <em>/app-component-b/subroot1</em>, 

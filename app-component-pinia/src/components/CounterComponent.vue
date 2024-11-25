@@ -14,7 +14,6 @@ function decrement(): void {
 </script>
 
 <template>
-    <h2>App Component A</h2>
     <div>
         This is an application component that is developed as a Vue plug-in in the @spa/app-component-a package. It uses Pinia to implement a state-full functionality.
     </div>
